@@ -1,5 +1,6 @@
 import Greeting from './Greeting';
 import Counter from './Counter';
+import RandomUser from './RandomUser';
 function App() {
   return (
     <div>
@@ -9,7 +10,7 @@ function App() {
       <Greeting name="Taylor" />
       <Greeting name="Sky" />
       <Counter/>
-
+      <RandomUser/>
 </div>
   );
 }
