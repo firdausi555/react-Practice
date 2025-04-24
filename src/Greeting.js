@@ -1,7 +1,8 @@
 function Greeting({name}){
     return(
         <div>
-            <h1>Namaste {name}</h1>
+         
+            <h2>Namaste i am using props fnctionality {name}</h2>
         </div>
 
     );
