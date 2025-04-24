@@ -1,5 +1,5 @@
 import Greeting from './Greeting';
-
+import Counter from './Counter';
 function App() {
   return (
     <div>
@@ -8,8 +8,9 @@ function App() {
       <Greeting name="Alex" />
       <Greeting name="Taylor" />
       <Greeting name="Sky" />
-<p> asad asad asad asad asd
-  </p>    </div>
+      <Counter/>
+
+</div>
   );
 }
 
