@@ -1,25 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect ,useContext} from 'react';
+import UserContext from './UserContext';
 
 function Clock() {
+    const user = useContext(UserContext);
+
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
-    // Set up the timer
     const intervalId = setInterval(() => {
       setTime(new Date());
-    }, 1000); // update every second
+    }, 1000); 
 
     // Cleanup function
     return () => {
-      clearInterval(intervalId); // clear the interval when the component unmounts
+      clearInterval(intervalId); 
       console.log('Clock component unmounted, timer cleared.');
     };
-  }, []); // Run only once when the component mounts
+  }, []); 
 
   return (
     <div style={clockStyle}>
       <h2>🕒 Live Clock</h2>
       <p style={timeStyle}>{time.toLocaleTimeString()}</p>
+      <p>👤 User: {user.name} ({user.role})</p>
+
     </div>
   );
 }

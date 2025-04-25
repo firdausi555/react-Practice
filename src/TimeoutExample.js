@@ -4,7 +4,6 @@ function TimeoutExample() {
   const [message, setMessage] = useState("Wait for it...");
 
   useEffect(() => {
-    // Set a timer to update the message after 3 seconds
     const timeoutId = setTimeout(() => {
       setMessage("Boom! 💥");
     }, 3000); // 3 seconds
