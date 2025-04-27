@@ -8,6 +8,7 @@ import ThemeContext from './ThemeContext';
 import ThemedBox from './ThemedBox';
 
 import { useState } from 'react';
+import ReducerCounter from './ReducerCounter';
 
 function App() {
   const [user] = useState({ name: 'Sabil', role: 'Developer' });
@@ -46,13 +47,14 @@ function App() {
           <Greeting name="Taylor" />
           <Greeting name="Sky" />
           <Counter />
-          <RandomUser />
+          {/* <RandomUser /> */}
           <Clock />
           <TimeoutExample />
           <button style={buttonStyle} onClick={toggleTheme}>
             Toggle Theme
           </button>
           <ThemedBox />
+          <ReducerCounter/>
         </div>
       </ThemeContext.Provider>
     </UserContext.Provider>
