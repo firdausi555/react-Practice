@@ -9,6 +9,7 @@ import ThemedBox from './ThemedBox';
 
 import { useState } from 'react';
 import ReducerCounter from './ReducerCounter';
+import Posts from './Posts';
 
 function App() {
   const [user] = useState({ name: 'Sabil', role: 'Developer' });
@@ -55,6 +56,7 @@ function App() {
           </button>
           <ThemedBox />
           <ReducerCounter/>
+          <Posts/>
         </div>
       </ThemeContext.Provider>
     </UserContext.Provider>
