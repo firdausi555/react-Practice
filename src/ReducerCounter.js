@@ -17,6 +17,7 @@ function reducer(state, action) {
 function ReducerCounter() {
   // 2. Set up useReducer
   const [state, dispatch] = useReducer(reducer, initialState);
+//   useReducer(what_to_do, where_to_start)
 
   return (
     <div style={{ textAlign: 'center', margin: '20px' }}>
