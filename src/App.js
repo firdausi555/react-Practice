@@ -10,6 +10,7 @@ import ThemedBox from './ThemedBox';
 import { useState } from 'react';
 import ReducerCounter from './ReducerCounter';
 import Posts from './Posts';
+import AxiosPosts from './AxiosPosts';
 
 function App() {
   const [user] = useState({ name: 'Sabil', role: 'Developer' });
@@ -55,8 +56,9 @@ function App() {
             Toggle Theme
           </button>
           <ThemedBox />
-          <ReducerCounter/>
+          {/* <ReducerCounter/> */}
           <Posts/>
+          <AxiosPosts/>
         </div>
       </ThemeContext.Provider>
     </UserContext.Provider>
